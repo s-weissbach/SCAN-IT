@@ -49,6 +49,6 @@ def graph_alpha(pts, n_layer = 1, cut = np.inf, draw = False):
         plt.axis('equal'); plt.axis('off'); plt.show()
 
     # Get the sparse adjacency matrix
-    A = nx.to_scipy_sparse_matrix(extended_graph, format='csr')
+    A = nx.to_scipy_sparse_array (extended_graph, format='csr')
 
     return A
